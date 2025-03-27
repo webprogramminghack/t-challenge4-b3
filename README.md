@@ -10,8 +10,8 @@
 
 Create a simple book management application using TypeScript. This application should allow users to:
 
-1. Create a type for book where each book has a title, author, and publication year
-2. Create an array to store books
+1. Create a type for `book` where each book has a title, author, and publication year
+2. Create `books` array to store books
 3. Implement a function named `addBook` to add new books to the collection
 4. Implement a function named `listBooks` to display all stored books
 5. Implement a function named `searchBook` to find books by title (should be an optional parameter)
@@ -53,15 +53,15 @@ searchBook('1984');
 
 Create a simple calculator application that supports various arithmetic operations such as addition, subtraction, multiplication, and division. This application should allow users to:
 
-1. Define a type for arithmetic operations (addition, subtraction, multiplication, division)
-2. Create a type for base input, named `BaseInput`
-3. Create a type for numbers input, named `NumbersInput`
+1. Define a `Operation` type for arithmetic operations (addition, subtraction, multiplication, division)
+2. Create a `BaseInput` type for base input (here you must make `operation` key and value is the type of `Operation` )
+3. Create a `NumbersInput` type for numbers input (here you must make `numbers` key anda value is an array of numbers)
 4. Create an intersection type combining `BaseInput` and `NumbersInput`
-5. Implement a function to perform arithmetic operations that:
+5. Create a `calculate` function to perform arithmetic operations that:
    - Uses parameter destructuring
    - Checks if the input is not empty
    - Performs addition, subtraction, multiplication, and division operations
-   - Returns the calculated result
+   - Returns error message if the operation is invalid
 
 ### **Example Input:**
 
